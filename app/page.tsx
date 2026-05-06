@@ -515,7 +515,10 @@ export default function Home() {
               <div className="team-card__photo team-card__photo--1" aria-hidden="true"></div>
               <div className="team-card__body">
                 <h3 className="team-card__name">Vlad Bortnovskyi</h3>
-                <span className="team-card__role">CEO</span>
+                <div className="team-card__roles">
+                  <span className="team-card__role">CEO</span>
+                  <span className="team-card__role">Art Director</span>
+                </div>
               </div>
             </article>
 
@@ -570,6 +573,15 @@ export default function Home() {
         <section className="get-in-touch" id="contact" data-scroll-section>
           <div className="bg-soft" aria-hidden="true"></div>
 
+          <img
+            src="/landing/atom-3d.png"
+            alt=""
+            className="get-in-touch__atom"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+          />
+
           <div className="get-in-touch__top">
             <h2 className="git-title">
               <a
@@ -579,7 +591,7 @@ export default function Home() {
                 className="git-title__link"
               >
                 <span>Get in touch</span>
-                <img src="/landing/arrow-feature.svg" alt="" className="git-title__arrow" />
+                <img src="/landing/icon-arrow-git.svg" alt="" className="git-title__arrow" />
               </a>
             </h2>
 
@@ -595,11 +607,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://t.me/bortnovskyi_v"
+                  href="https://dribbble.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Telegram <img src="/landing/icon-arrow-up-right.svg" alt="" />
+                  Dribbble <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
               <li>
@@ -609,6 +621,15 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   Instagram <img src="/landing/icon-arrow-up-right.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
             </ul>
@@ -629,6 +650,15 @@ export default function Home() {
             </div>
 
             <div className="footer__right">
+              <button type="button" className="lang-select" aria-label="Language">
+                <span>Eng</span>
+                <img
+                  src="/landing/icon-angle-left.svg"
+                  alt=""
+                  className="lang-select__chevron"
+                />
+              </button>
+
               <a
                 href="https://t.me/bortnovskyi_v"
                 target="_blank"

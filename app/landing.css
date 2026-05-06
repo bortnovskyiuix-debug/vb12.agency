@@ -1637,6 +1637,12 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   gap: 14px;
 }
 
+.team-card__roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .team-card__name {
   font-family: var(--font-sans);
   font-weight: 350;
@@ -1677,13 +1683,26 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   background: linear-gradient(180deg, var(--c-light-blue) 0%, rgba(205, 219, 255, 0.28) 100%);
 }
 
-.get-in-touch > *:not(.bg-soft) { position: relative; z-index: 1; }
+.get-in-touch > *:not(.bg-soft):not(.get-in-touch__atom) { position: relative; z-index: 1; }
+
+.get-in-touch__atom {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-8%, -58%);
+  width: 320px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
 
 .get-in-touch__top {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin-bottom: 160px;
+  max-width: 720px;
 }
 
 .git-title {
@@ -1747,6 +1766,12 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+.footer .lang-select {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
 }
 
 .agency-meta--sm {
@@ -2019,7 +2044,8 @@ html.no-js .reveal-card {
 
   /* Get-in-touch / footer — match Figma 390×517 */
   .get-in-touch { padding: 32px var(--gutter) 24px; }
-  .get-in-touch__top { gap: 24px; margin-bottom: 100px; }
+  .get-in-touch__atom { display: none; }
+  .get-in-touch__top { gap: 24px; margin-bottom: 100px; max-width: 100%; }
   .git-title { font-size: 46px; line-height: 46px; }
   .git-title__link { gap: 8px; }
   .git-title__arrow { width: 28px; height: 28px; }
