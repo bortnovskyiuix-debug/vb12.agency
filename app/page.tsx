@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -12,9 +14,9 @@ export default function Home() {
         {/* ========== HEADER ========== */}
         <header className="topbar">
           <div className="topbar__left">
-            <a href="/" className="logo-card logo-card--lg" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
+            <Link href="/" className="logo-card logo-card--lg" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
               <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
-            </a>
+            </Link>
           </div>
 
           <ul className="social-icons" aria-label="Social media">
@@ -135,12 +137,7 @@ export default function Home() {
           </div>
 
           <a href="#" className="start-now" aria-label="Start now">
-            <img
-              src="/landing/start-now-rotor.svg"
-              alt=""
-              className="start-now__rotor"
-              aria-hidden="true"
-            />
+            <img src="/landing/start-now-rotor.svg" alt="" className="start-now__rotor" aria-hidden="true" />
             <span className="start-now__arrow" aria-hidden="true">
               <img src="/landing/start-now-arrow.svg" alt="" />
             </span>
@@ -535,9 +532,9 @@ export default function Home() {
 
           <footer className="footer">
             <div className="footer__left">
-              <a href="/" className="logo-card" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
+              <Link href="/" className="logo-card" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
                 <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
-              </a>
+              </Link>
             </div>
 
             <div className="footer__right">

@@ -42,6 +42,7 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/consistent-type-imports': 'error',
       'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+      '@next/next/no-img-element': 'off',
     },
   }
 );

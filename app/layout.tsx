@@ -33,8 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'VB12 — Bold Brands. Smart Pixels. Zero Boring.',
-    description:
-      'Smart solutions for bold brands. UX/UI, web, motion, 3D, pitchdecks — by VB12.',
+    description: 'Smart solutions for bold brands. UX/UI, web, motion, 3D, pitchdecks — by VB12.',
     images: ['/cover.png'],
   },
 };
