@@ -4,6 +4,7 @@ import ScriptsBootstrap from './components/ScriptsBootstrap';
 import './landing.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vb12.agency'),
   title: 'VB12 — Bold Brands. Smart Pixels. Zero Boring.',
   description:
     'Creative studio that ships digital products with sharp design, slick motion, and code that actually works. UX/UI, web & app, 3D, animation, pitchdecks — all under one roof.',
@@ -27,14 +28,14 @@ export const metadata: Metadata = {
     description:
       'High-end digital products that look clean and work hard. Design, motion, 3D, and dev — crafted by VB12.',
     siteName: 'VB12',
-    images: [{ url: '/landing/hero-mockup.png', width: 1200, height: 630, alt: 'VB12' }],
+    images: [{ url: '/cover.png', width: 1200, height: 630, alt: 'VB12 Agency' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'VB12 — Bold Brands. Smart Pixels. Zero Boring.',
     description:
       'Smart solutions for bold brands. UX/UI, web, motion, 3D, pitchdecks — by VB12.',
-    images: ['/landing/hero-mockup.png'],
+    images: ['/cover.png'],
   },
 };
 
