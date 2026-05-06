@@ -12,15 +12,8 @@ export default function Home() {
         {/* ========== HEADER ========== */}
         <header className="topbar">
           <div className="topbar__left">
-            <a
-              href="/"
-              className="logo-card logo-card--lg"
-              aria-label="VB12 — Vlad Bortnovskyi Creative Agency"
-            >
-              <img
-                src="/landing/vb12-logo-card.svg"
-                alt="VB12 — Vlad Bortnovskyi Creative Agency"
-              />
+            <a href="/" className="logo-card logo-card--lg" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
+              <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
             </a>
           </div>
 
@@ -46,12 +39,7 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a
-                href="https://t.me/bortnovskyi_v"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Telegram"
-              >
+              <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                 <img src="/landing/icon-tg.svg" alt="" />
               </a>
             </li>
@@ -62,12 +50,7 @@ export default function Home() {
             <span>(096) 000-12-12</span>
           </a>
 
-          <a
-            href="https://t.me/bortnovskyi_v"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-pill"
-          >
+          <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" className="btn-pill">
             <span>Lets Talk</span>
             <span className="btn-pill__icon">
               <img src="/landing/icon-arrow-up-right.svg" alt="" />
@@ -92,19 +75,13 @@ export default function Home() {
               <span className="reveal-line">
                 <span className="hero__title-line">
                   Bold Brands
-                  <svg className="hero__sparkle" viewBox="0 0 32 32" aria-hidden="true">
-                    <path
-                      d="M16 0L18.5 13.5L32 16L18.5 18.5L16 32L13.5 18.5L0 16L13.5 13.5L16 0Z"
-                      fill="#2365FA"
-                    />
-                  </svg>
+                  <img src="/landing/hero-sparkle.svg" alt="" className="hero__sparkle" aria-hidden="true" />
                 </span>
               </span>
             </h1>
             <p className="hero__sub reveal-line">
               <span>
-                We design and build <strong>digital products</strong> that look clean and{' '}
-                <strong>work hard</strong>
+                We design and build <strong>digital products</strong> that look clean and <strong>work hard</strong>
               </span>
             </p>
 
@@ -153,35 +130,19 @@ export default function Home() {
               <p className="stat__num" data-counter="70">
                 70+
               </p>
-              <p className="stat__label">Create projects</p>
+              <p className="stat__label">Shared Expertise</p>
             </div>
           </div>
 
           <a href="#" className="start-now" aria-label="Start now">
-            <svg viewBox="0 0 120 120" className="start-now__rotor" aria-hidden="true">
-              <defs>
-                <path
-                  id="start-text-path"
-                  d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
-                />
-              </defs>
-              <text fill="#020408" fontSize="11" fontWeight="600" letterSpacing="2">
-                <textPath href="#start-text-path">
-                  START NOW · START NOW · START NOW ·
-                </textPath>
-              </text>
-            </svg>
+            <img
+              src="/landing/start-now-rotor.svg"
+              alt=""
+              className="start-now__rotor"
+              aria-hidden="true"
+            />
             <span className="start-now__arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 4v16m0 0l-7-7m7 7l7-7"
-                  stroke="#020408"
-                  strokeWidth="1.6"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src="/landing/start-now-arrow.svg" alt="" />
             </span>
           </a>
         </section>
@@ -363,28 +324,18 @@ export default function Home() {
               </div>
               <a href="#services" className="title-row">
                 <h2 className="section-title">Our Services</h2>
-                <img
-                  src="/landing/arrow-section.svg"
-                  alt=""
-                  className="section-title__arrow"
-                />
+                <img src="/landing/arrow-section.svg" alt="" className="section-title__arrow" />
               </a>
             </div>
             <div className="services__head-right">
-              <svg
+              <img
+                src="/landing/services-globe.svg"
+                alt=""
                 className="services__globe"
-                width="80"
-                height="80"
-                viewBox="0 0 80 80"
-                fill="none"
+                width={80}
+                height={80}
                 aria-hidden="true"
-              >
-                <circle cx="40" cy="40" r="38" stroke="#2365FA" strokeWidth="1.2" />
-                <ellipse cx="40" cy="40" rx="38" ry="14" stroke="#2365FA" strokeWidth="1.2" />
-                <ellipse cx="40" cy="40" rx="14" ry="38" stroke="#2365FA" strokeWidth="1.2" />
-                <line x1="2" y1="40" x2="78" y2="40" stroke="#2365FA" strokeWidth="1.2" />
-                <line x1="40" y1="2" x2="40" y2="78" stroke="#2365FA" strokeWidth="1.2" />
-              </svg>
+              />
               <p className="services__lead">
                 Digital Solutions That Are
                 <br />
@@ -394,15 +345,11 @@ export default function Home() {
           </header>
 
           <ul className="services__list" id="services-list">
-            <li
-              className="srow srow--active"
-              data-preview-video="/landing/service-webdesign.webm"
-            >
+            <li className="srow srow--active" data-preview-video="/landing/service-webdesign.webm">
               <h3 className="srow__name">Web &amp; App Design</h3>
               <span className="srow__dot" aria-hidden="true"></span>
               <p className="srow__copy">
-                High-End Digital Experiences Crafted To Elevate Perception, Simplify Decisions,
-                And Maximize Conversion.
+                High-End Digital Experiences Crafted To Elevate Perception, Simplify Decisions, And Maximize Conversion.
               </p>
               <ul className="srow__chips">
                 <li>UX/UI Design</li>
@@ -416,8 +363,7 @@ export default function Home() {
               <h3 className="srow__name">Development</h3>
               <span className="srow__dot" aria-hidden="true"></span>
               <p className="srow__copy">
-                We Can Craft Practically Anything, From Websites On CMS To Custom Software
-                Products
+                We Can Craft Practically Anything, From Websites On CMS To Custom Software Products
               </p>
               <ul className="srow__chips">
                 <li>Web Development</li>
@@ -430,8 +376,7 @@ export default function Home() {
               <h3 className="srow__name">Custom Animation</h3>
               <span className="srow__dot" aria-hidden="true"></span>
               <p className="srow__copy">
-                Captivating Motion That Brings Ideas To Life And Turns Complex Concepts Into
-                Engaging Stories.
+                Captivating Motion That Brings Ideas To Life And Turns Complex Concepts Into Engaging Stories.
               </p>
               <ul className="srow__chips">
                 <li>UI Animation</li>
@@ -445,8 +390,7 @@ export default function Home() {
               <h3 className="srow__name">2D/3D Graphics</h3>
               <span className="srow__dot" aria-hidden="true"></span>
               <p className="srow__copy">
-                Striking Visuals Designed To Strengthen Brand Recognition And Leave A Lasting
-                Impression.
+                Striking Visuals Designed To Strengthen Brand Recognition And Leave A Lasting Impression.
               </p>
               <ul className="srow__chips">
                 <li>Illustration</li>
@@ -460,8 +404,7 @@ export default function Home() {
               <h3 className="srow__name">Pitchdeck</h3>
               <span className="srow__dot" aria-hidden="true"></span>
               <p className="srow__copy">
-                Persuasive Presentations Structured To Communicate Value And Close Deals With
-                Confidence.
+                Persuasive Presentations Structured To Communicate Value And Close Deals With Confidence.
               </p>
               <ul className="srow__chips">
                 <li>Pitch Decks</li>
@@ -490,28 +433,17 @@ export default function Home() {
               </div>
               <div className="title-row">
                 <h2 className="section-title">Our Team</h2>
-                <img
-                  src="/landing/arrow-section.svg"
-                  alt=""
-                  className="section-title__arrow"
-                />
+                <img src="/landing/arrow-section.svg" alt="" className="section-title__arrow" />
               </div>
             </div>
             <p className="team__lead">
-              Experience The Expertise Of Our Professionals As They Bring Your Ideas To
-              Fruition.
+              Experience The Expertise Of Our Professionals As They Bring Your Ideas To Fruition.
             </p>
           </header>
 
           <div className="team__grid">
             <article className="team-card">
-              <img
-                src="/landing/team-shape.svg"
-                alt=""
-                className="team-card__shape"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/landing/team-shape.svg" alt="" className="team-card__shape" loading="lazy" decoding="async" />
               <div className="team-card__photo team-card__photo--1" aria-hidden="true"></div>
               <div className="team-card__body">
                 <h3 className="team-card__name">Vlad Bortnovskyi</h3>
@@ -523,13 +455,7 @@ export default function Home() {
             </article>
 
             <article className="team-card">
-              <img
-                src="/landing/team-shape.svg"
-                alt=""
-                className="team-card__shape"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/landing/team-shape.svg" alt="" className="team-card__shape" loading="lazy" decoding="async" />
               <div className="team-card__photo team-card__photo--2" aria-hidden="true"></div>
               <div className="team-card__body">
                 <h3 className="team-card__name">Daria Ludan</h3>
@@ -538,13 +464,7 @@ export default function Home() {
             </article>
 
             <article className="team-card">
-              <img
-                src="/landing/team-shape.svg"
-                alt=""
-                className="team-card__shape"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/landing/team-shape.svg" alt="" className="team-card__shape" loading="lazy" decoding="async" />
               <div className="team-card__photo team-card__photo--3" aria-hidden="true"></div>
               <div className="team-card__body">
                 <h3 className="team-card__name">Yulia Night</h3>
@@ -553,13 +473,7 @@ export default function Home() {
             </article>
 
             <article className="team-card">
-              <img
-                src="/landing/team-shape.svg"
-                alt=""
-                className="team-card__shape"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="/landing/team-shape.svg" alt="" className="team-card__shape" loading="lazy" decoding="async" />
               <div className="team-card__photo team-card__photo--4" aria-hidden="true"></div>
               <div className="team-card__body">
                 <h3 className="team-card__name">Konstantin Shumov</h3>
@@ -597,38 +511,22 @@ export default function Home() {
 
             <ul className="social-links">
               <li>
-                <a
-                  href="https://www.behance.net/vb12_design"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.behance.net/vb12_design" target="_blank" rel="noopener noreferrer">
                   Behance <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
                   Dribbble <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://instagram.com/bortnovskyi_v"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://instagram.com/bortnovskyi_v" target="_blank" rel="noopener noreferrer">
                   Instagram <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
                   Linkedin <img src="/landing/icon-arrow-up-right.svg" alt="" />
                 </a>
               </li>
@@ -637,34 +535,18 @@ export default function Home() {
 
           <footer className="footer">
             <div className="footer__left">
-              <a
-                href="/"
-                className="logo-card"
-                aria-label="VB12 — Vlad Bortnovskyi Creative Agency"
-              >
-                <img
-                  src="/landing/vb12-logo-card.svg"
-                  alt="VB12 — Vlad Bortnovskyi Creative Agency"
-                />
+              <a href="/" className="logo-card" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
+                <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
               </a>
             </div>
 
             <div className="footer__right">
               <button type="button" className="lang-select" aria-label="Language">
                 <span>Eng</span>
-                <img
-                  src="/landing/icon-angle-left.svg"
-                  alt=""
-                  className="lang-select__chevron"
-                />
+                <img src="/landing/icon-angle-left.svg" alt="" className="lang-select__chevron" />
               </button>
 
-              <a
-                href="https://t.me/bortnovskyi_v"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-pill"
-              >
+              <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" className="btn-pill">
                 <span>Lets Talk</span>
                 <span className="btn-pill__icon">
                   <img src="/landing/icon-arrow-up-right.svg" alt="" />
