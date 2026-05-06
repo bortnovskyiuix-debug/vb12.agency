@@ -1619,15 +1619,17 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   width: 229px;
   height: 220px;
   margin: 0 auto;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #e6e9f1 0%, #cddbff 100%);
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   flex-shrink: 0;
 }
 
-.team-card__photo--1 { background-image: url('/landing/team-1.png'), linear-gradient(135deg, #e6e9f1 0%, #cddbff 100%); background-size: cover; background-position: center; }
-.team-card__photo--2 { background-image: url('/landing/team-2.png'), linear-gradient(135deg, #cddbff 0%, #e6e9f1 100%); background-size: cover; background-position: center; }
-.team-card__photo--3 { background-image: url('/landing/team-3.png'), linear-gradient(135deg, #e6e9f1 0%, #cddbff 100%); background-size: cover; background-position: center; }
-.team-card__photo--4 { background-image: url('/landing/team-4.png'), linear-gradient(135deg, #cddbff 0%, #e6e9f1 100%); background-size: cover; background-position: center; }
+.team-card__photo--1 { background-image: url('/landing/team-1.png'); }
+.team-card__photo--2 { background-image: url('/landing/team-2.png'); }
+.team-card__photo--3 { background-image: url('/landing/team-3.png'); }
+.team-card__photo--4 { background-image: url('/landing/team-4.png'); }
 
 .team-card__body {
   margin-top: auto;
