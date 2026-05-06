@@ -5,11 +5,10 @@
    ========================================================= */
 
 (function () {
-  /* ---------- Preloader: play Lottie animation in full, then dismiss ---------- */
+  /* ---------- Preloader: loop Lottie until window 'load', then dismiss ---------- */
   const initPreloader = () => {
     const host = document.getElementById('lottie-preloader');
     let done = false;
-    let lottieAttached = false;
 
     const finish = () => {
       if (done) return;
@@ -25,16 +24,13 @@
     const tryLottie = () => {
       if (!host || typeof lottie === 'undefined') return false;
       try {
-        const anim = lottie.loadAnimation({
+        lottie.loadAnimation({
           container: host,
           renderer: 'svg',
-          loop: false,
+          loop: true,
           autoplay: true,
           path: '/landing/preloader.json',
         });
-        lottieAttached = true;
-        anim.addEventListener('complete', finish);
-        anim.addEventListener('data_failed', finish);
         return true;
       } catch (e) { return false; }
     };
@@ -44,17 +40,15 @@
     const attempt = () => {
       if (tryLottie()) return;
       if (++tries < 30) setTimeout(attempt, 100);
-      else {
-        // Lottie failed entirely — fallback dismiss
-        const dismiss = () => setTimeout(finish, 200);
-        if (document.readyState === 'complete' || document.readyState === 'interactive') dismiss();
-        else window.addEventListener('DOMContentLoaded', dismiss, { once: true });
-      }
     };
     attempt();
 
-    // Safety cap: if Lottie attached but never fires "complete" (broken JSON, etc.)
-    setTimeout(() => { if (lottieAttached && !done) finish(); }, 10000);
+    // Dismiss when the page (and all subresources) finished loading
+    if (document.readyState === 'complete') setTimeout(finish, 0);
+    else window.addEventListener('load', () => setTimeout(finish, 0), { once: true });
+
+    // Safety cap: never block more than 8s
+    setTimeout(finish, 8000);
   };
 
   initPreloader();
