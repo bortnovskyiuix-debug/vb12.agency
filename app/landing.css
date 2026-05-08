@@ -231,12 +231,14 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
   width: var(--stage);
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 
 .bg-hero {
   position: absolute;
-  inset: 0 0 auto 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 903px;
   background: var(--grad-hero);
   z-index: 0;
@@ -1685,7 +1687,12 @@ h1, h2, h3 { margin: 0; font-weight: 500; }
 
 .get-in-touch .bg-soft {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: auto;
+  width: 100vw;
+  transform: translateX(-50%);
   z-index: 0;
   background: linear-gradient(180deg, var(--c-light-blue) 0%, rgba(205, 219, 255, 0.28) 100%);
 }

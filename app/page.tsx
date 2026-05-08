@@ -7,9 +7,9 @@ export default function Home() {
       <div className="preloader" aria-hidden="true">
         <div className="preloader__inner" id="lottie-preloader"></div>
       </div>
+      {/* ========== Top hero gradient (full-width) ========== */}
+      <div className="bg-hero" aria-hidden="true"></div>
       <div className="page">
-        {/* ========== Top hero gradient ========== */}
-        <div className="bg-hero" aria-hidden="true"></div>
 
         {/* ========== HEADER ========== */}
         <header className="topbar">
@@ -538,11 +538,6 @@ export default function Home() {
             </div>
 
             <div className="footer__right">
-              <button type="button" className="lang-select" aria-label="Language">
-                <span>Eng</span>
-                <img src="/landing/icon-angle-left.svg" alt="" className="lang-select__chevron" />
-              </button>
-
               <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" className="btn-pill">
                 <span>Lets Talk</span>
                 <span className="btn-pill__icon">
