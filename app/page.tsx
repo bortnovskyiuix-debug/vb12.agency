@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+import SiteFooter from './components/SiteFooter';
+import SiteHeader from './components/SiteHeader';
+
 export default function Home() {
   return (
     <>
@@ -10,55 +13,7 @@ export default function Home() {
       {/* ========== Top hero gradient (full-width) ========== */}
       <div className="bg-hero" aria-hidden="true"></div>
       <div className="page">
-
-        {/* ========== HEADER ========== */}
-        <header className="topbar">
-          <div className="topbar__left">
-            <Link href="/" className="logo-card logo-card--lg" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
-              <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
-            </Link>
-          </div>
-
-          <ul className="social-icons" aria-label="Social media">
-            <li>
-              <a
-                href="https://www.behance.net/vb12_design"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Behance"
-              >
-                <img src="/landing/icon-be.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/bortnovskyi_v"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <img src="/landing/icon-ig.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                <img src="/landing/icon-tg.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-
-          <a href="tel:0960001212" className="phone-link">
-            <img src="/landing/icon-phone.svg" alt="" />
-            <span>(096) 000-12-12</span>
-          </a>
-
-          <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" className="btn-pill">
-            <span>Lets Talk</span>
-            <span className="btn-pill__icon">
-              <img src="/landing/icon-arrow-up-right.svg" alt="" />
-            </span>
-          </a>
-        </header>
+        <SiteHeader />
 
         {/* ========== HERO ========== */}
         <section className="hero" data-scroll-section>
@@ -307,6 +262,15 @@ export default function Home() {
               </div>
             </a>
           </div>
+
+          <div className="works-more">
+            <Link href="/poker" className="btn-pill">
+              <span>Poker demos</span>
+              <span className="btn-pill__icon">
+                <img src="/landing/icon-arrow-up-right.svg" alt="" />
+              </span>
+            </Link>
+          </div>
         </section>
 
         {/* ========== SERVICES ========== */}
@@ -480,73 +444,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ========== GET IN TOUCH FOOTER ========== */}
-        <section className="get-in-touch" id="contact" data-scroll-section>
-          <div className="bg-soft" aria-hidden="true"></div>
-
-          <img
-            src="/landing/atom-3d.png"
-            alt=""
-            className="get-in-touch__atom"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-          />
-
-          <div className="get-in-touch__top">
-            <h2 className="git-title">
-              <a
-                href="https://t.me/bortnovskyi_v"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="git-title__link"
-              >
-                <span>Get in touch</span>
-                <img src="/landing/icon-arrow-git.svg" alt="" className="git-title__arrow" />
-              </a>
-            </h2>
-
-            <ul className="social-links">
-              <li>
-                <a href="https://www.behance.net/vb12_design" target="_blank" rel="noopener noreferrer">
-                  Behance <img src="/landing/icon-arrow-up-right.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
-                  Dribbble <img src="/landing/icon-arrow-up-right.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com/bortnovskyi_v" target="_blank" rel="noopener noreferrer">
-                  Instagram <img src="/landing/icon-arrow-up-right.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-                  Linkedin <img src="/landing/icon-arrow-up-right.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <footer className="footer">
-            <div className="footer__left">
-              <Link href="/" className="logo-card" aria-label="VB12 — Vlad Bortnovskyi Creative Agency">
-                <img src="/landing/vb12-logo-card.svg" alt="VB12 — Vlad Bortnovskyi Creative Agency" />
-              </Link>
-            </div>
-
-            <div className="footer__right">
-              <a href="https://t.me/bortnovskyi_v" target="_blank" rel="noopener noreferrer" className="btn-pill">
-                <span>Lets Talk</span>
-                <span className="btn-pill__icon">
-                  <img src="/landing/icon-arrow-up-right.svg" alt="" />
-                </span>
-              </a>
-            </div>
-          </footer>
-        </section>
+        <SiteFooter />
       </div>
     </>
   );

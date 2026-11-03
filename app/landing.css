@@ -2095,3 +2095,13 @@ html.no-js .reveal-card {
   .start-now { width: 60px; height: 60px; }
   .start-now__arrow { width: 18px; height: 18px; }
 }
+
+/* Link from Featured Works to /poker */
+.works-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .works-more { margin-top: 24px; }
+}
